@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> document </title>
+    <style>
+      * {margin : 0;  padding : 0 ; }
+      #신생텍스트{
+        height:1000px;
+        width:100%;
+        border:1px solid red;
+        display:flex;
+        align-items:center;
+        align-content: center;
+        
+      }
+      .아이디여도{
+        height: 100px;
+        width:100%;
+        border:1px solid black;
+        text-align:center;
+      }
+      .test{
+        margin-top:100px;
+        transition:all 1s;
+
+      }
+    </style>
+    <script
+        src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+        crossorigin="anonymous">
+    </script>
+
+</head>
+<body>
+    <div class="warpper">
+        <div>1</div>
+        <div>2</div>
+    </div>
+    <div id="신생텍스트">
+        <div class="아이디여도됨">
+            <div>"그들의 여정에 행운이 있기를"</div>
+            <div>"모험가에게 크리스탈의 인도가 함께하기를....</div>
+
+        </div>
+
+    </div>
+    <button class="클릭">클릭</button>
+
+    <script>
+        $(document).ready(function(){
+            $(".클릭").click(function(){
+                $("#신생텍스트").addClass("test");
+            });
+
+        });
+
+    </script>
+</body>
+
+
+
+
+</html>
